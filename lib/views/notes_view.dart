@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/constants.dart';
 import 'package:notes_app/views/widget/notes_view_body.dart';
 
 import 'widget/add_note_buttom_sheet.dart';
@@ -10,20 +11,23 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
+        backgroundColor: kPrimaryColor,
         onPressed: () {
           showModalBottomSheet(
-            // shape: RoundedRectangleBorder(
-            //   borderRadius: BorderRadius.circular(16.0)
-            // ),
+              // shape: RoundedRectangleBorder(
+              //   borderRadius: BorderRadius.circular(16.0)
+              // ),
               context: (context),
               builder: (context) {
                 return const AddNoteBottomSheet();
               });
         },
-        child: const Icon(Icons.add),
+        child: const Icon(
+          Icons.add,
+          color: Colors.black,
+        ),
       ),
       body: const NotesViewBody(),
     );
   }
 }
-
