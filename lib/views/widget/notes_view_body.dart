@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'custom_app_bar.dart';
-import 'custom_notes_item.dart';
 import 'notes_item.dart';
 
 class NotesViewBody extends StatelessWidget {
