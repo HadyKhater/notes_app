@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/constants.dart';
 
 class CustomBottom extends StatelessWidget {
-  const CustomBottom({super.key, this.onTap, this.isLoading=false});
+  const CustomBottom({super.key, this.onTap,  this.isLoading=false, });
   final void Function()? onTap;
   final bool isLoading;
   @override
